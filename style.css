@@ -1,0 +1,12 @@
+button {
+
+  width: 60px;
+  height: 40px;
+  background: yellow;
+}
+
+.buttonCl {
+
+  background-color: aquamarine;
+  border-radius: 30px;
+}

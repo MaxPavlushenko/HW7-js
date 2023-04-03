@@ -1,11 +1,11 @@
 'use strict';
 
-
+/*
 
 {
 
 
-  function Scooter() {
+  let Scooter = function () {
 
     this.on = function () {
       this.state = true;
@@ -61,6 +61,34 @@
 
   }
   let Scooters = new Scooter();
-  Scooters.get();
+  //Scooters.get();
 
-} 
+
+  // Функциональное наследование 
+
+  let Avto = function () {
+    Scooter.apply(this)
+    this.cost = function () {
+      this.model = prompt('Введите модель: BMW');
+      this.time = +prompt('Введите время поездки в минутах');
+          this.speed = 150;
+          this.price = this.time * 4;
+          this.distance = Math.round(this.time * (this.speed / 60));
+          this.buttery = Math.round(this.distance * (50/ 100));
+       
+      }
+  }
+
+  let avto = new Avto() 
+    
+  console.log(avto.get());  // Спросить почему выдает Undefind последней строкой в консоли?
+
+  }
+
+*/
+
+
+
+
+
+  
